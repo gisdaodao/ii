@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="SplitViewOptions.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SplitViewOptions"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <Style TargetType="Button" x:Key="ellipsebtn">
+            <!--Set to true to not get any properties from the themes.-->
+            <!--<Setter Property="OverridesDefaultStyle" Value="True"/>-->
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Ellipse Fill="{TemplateBinding Background}"/>
+                            <ContentPresenter HorizontalAlignment="Center"
+                            VerticalAlignment="Center"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" x:Name="rootlayout">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="36"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <RelativePanel HorizontalAlignment="Left"  Grid.Row="0" Visibility="Collapsed">
+            <TextBox x:Name="searchbox" MinWidth="360"></TextBox>
+            <Button x:Name="searchbtn" RelativePanel.RightOf="searchbox" Click="searchbtn_Click">搜索</Button>
+            <Button x:Name="openbtn" RelativePanel.RightOf="searchbtn" Click="openbtn_Click">打开网站</Button>
+        </RelativePanel>
+        <Grid Grid.Row="1">
+            <!--<WebView x:Name="homewebview" Source="http://baidu.com/"></WebView>-->
+            <WebView x:Name="homewebview" NewWindowRequested="homewebview_NewWindowRequested"></WebView>
+            <RelativePanel >
+                <Button Style="{StaticResource ellipsebtn}" Foreground="White" Background="Orange" Width="66" Height="66" x:Name="backwebbtn" RelativePanel.AlignRightWithPanel="True" Click="backwebbtn_Click"  RelativePanel.AlignVerticalCenterWithPanel="True">后退</Button>
+                <Button Style="{StaticResource ellipsebtn}" Visibility="Visible" Foreground="White" Background="Orange" Width="66" Height="66" x:Name="getscreen" RelativePanel.Below="backwebbtn" RelativePanel.AlignRightWithPanel="True" Click="getscreen_Click"  RelativePanel.AlignVerticalCenterWithPanel="True">截图</Button>
+                <Button Style="{StaticResource ellipsebtn}" Foreground="White" Background="Orange" Width="66" Height="66" x:Name="settofavorate" RelativePanel.Below="getscreen" Click="settofavorate_Click" RelativePanel.AlignRightWithPanel="True">收藏</Button>
+                <Button Style="{StaticResource ellipsebtn}" Foreground="White" Background="Orange" Width="66" Height="66" x:Name="share" RelativePanel.Below="settofavorate" Click="share_Click" RelativePanel.AlignRightWithPanel="True">分享</Button>
+                <Button Style="{StaticResource ellipsebtn}" Foreground="White" Background="Orange" Width="66" Height="66" x:Name="webdefault" RelativePanel.Below="share" Click="webdefault_Click" RelativePanel.AlignRightWithPanel="True">系统浏览器</Button>
+            </RelativePanel>
+        </Grid>
+    </Grid>
+</Page>
