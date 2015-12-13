@@ -1,1 +1,1 @@
-MainPackage=C:\Users\DYR_001\Desktop\Programmersite-master\Programmersite-master\SplitViewOptions\bin\x86\Release\Upload\SplitViewOptions_1.1.5.0_x86.appx
+MainPackage=E:\Programmersite-master\Programmersite-master\SplitViewOptions\bin\x86\Release\Upload\SplitViewOptions_1.1.6.0_x86.appx

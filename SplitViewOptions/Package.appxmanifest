@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="23654onetwoonestudio.win10" Publisher="CN=A6EAC52A-AB10-4DAF-9FAF-DF5013A9AE5E" Version="1.1.5.0" />
+  <Identity Name="23654onetwoonestudio.win10" Publisher="CN=A6EAC52A-AB10-4DAF-9FAF-DF5013A9AE5E" Version="1.1.6.0" />
   <mp:PhoneIdentity PhoneProductId="9d9f0946-7550-4339-bf2c-6af2c22e5df6" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>多彩浏览器win10版</DisplayName>
