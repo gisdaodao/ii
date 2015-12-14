@@ -1,1 +1,1 @@
-MainPackage=E:\Programmersite-master\Programmersite-master\SplitViewOptions\bin\x64\Release\Upload\SplitViewOptions_1.1.6.0_x64.appx
+MainPackage=E:\Programmersite-master\Programmersite-master\SplitViewOptions\bin\x64\Release\Upload\SplitViewOptions_1.1.14.0_x64.appx

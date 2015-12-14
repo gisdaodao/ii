@@ -1,4 +1,4 @@
-MainPackage=E:\Programmersite-master\Programmersite-master\SplitViewOptions\bin\ARM\Release\Upload\SplitViewOptions_1.1.6.0_ARM.appx
+MainPackage=E:\Programmersite-master\Programmersite-master\SplitViewOptions\bin\ARM\Release\Upload\SplitViewOptions_1.1.14.0_ARM.appx
 ResourcePack=E:\Programmersite-master\Programmersite-master\SplitViewOptions\_scale-100.appx
 ResourcePack=E:\Programmersite-master\Programmersite-master\SplitViewOptions\_scale-125.appx
 ResourcePack=E:\Programmersite-master\Programmersite-master\SplitViewOptions\_scale-150.appx
